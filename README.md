@@ -7,6 +7,6 @@ Usage
 
 Output:
 
-breachingunevenlypolyglot26
+<code>breachingunevenlypolyglot26</code>
 
 (highly unlikely to be in dictionary attack and easy to remember)
