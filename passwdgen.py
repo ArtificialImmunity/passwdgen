@@ -5,7 +5,7 @@ def genPass(minLen):
 		words=w.read().splitlines()
 		passwd=""
 		while (len(passwd)<int(minLen)):
-			r=randrange(0,len(words),1)
+			r=randrange(0,(len(words)-1),1)
 			passwd=passwd+words[r]
 		rr=randrange(10,99,1)
 		passwd=passwd+str(rr)
