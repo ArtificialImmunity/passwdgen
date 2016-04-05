@@ -13,26 +13,24 @@ Usage
 
 Sample Outputs:
 
-<code>Hydroplanes27Spitted
-UnawaresShaverRaft25
-76ScarvesBrittSticks
-LandmassColoration58
-Stile66BlockSmothers
-HillierIncarnation20
-10Vaults58Ghosting93
-60Joyriders37Lyric54
-OverhungTilted26Lief
-83HawkingSunblocks83
-82Brady48Middlebrows
-Misjudging62Implicit
-InfringedDemarcate30
-96UnfeelinglyAviator
-SaabGunners77Goner15
-RobustWards32Dirtied
-FellerHomesteaders11
-Kettledrums27Guzzler
-Graders5225Izhevsk64
-Clarets46Castrations
-Blarneyed58Sextons48</code>
+<code>Hydroplanes27Spitted</code>
+<code>UnawaresShaverRaft25</code>
+<code>76ScarvesBrittSticks</code>
+<code>LandmassColoration58</code>
+<code>Stile66BlockSmothers</code>
+<code>HillierIncarnation20</code>
+<code>10Vaults58Ghosting93</code>
+<code>60Joyriders37Lyric54</code>
+<code>OverhungTilted26Lief</code>
+<code>83HawkingSunblocks83</code>
+<code>82Brady48Middlebrows</code>
+<code>Misjudging62Implicit</code>
+<code>InfringedDemarcate30</code>
+<code>96UnfeelinglyAviator</code>
+<code>SaabGunners77Goner15</code>
+<code>RobustWards32Dirtied</code>
+<code>FellerHomesteaders11</code>
+<code>Kettledrums27Guzzler</code>
+<code>Graders5225Izhevsk64</code>
 
 (highly unlikely to be in dictionary attack and easy to remember)
