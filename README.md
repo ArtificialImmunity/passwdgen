@@ -14,23 +14,41 @@ Usage
 Sample Outputs:
 
 <code>Hydroplanes27Spitted</code>
+
 <code>UnawaresShaverRaft25</code>
+
 <code>76ScarvesBrittSticks</code>
+
 <code>LandmassColoration58</code>
+
 <code>Stile66BlockSmothers</code>
+
 <code>HillierIncarnation20</code>
+
 <code>10Vaults58Ghosting93</code>
+
 <code>60Joyriders37Lyric54</code>
+
 <code>OverhungTilted26Lief</code>
+
 <code>83HawkingSunblocks83</code>
+
 <code>82Brady48Middlebrows</code>
+
 <code>Misjudging62Implicit</code>
+
 <code>InfringedDemarcate30</code>
+
 <code>96UnfeelinglyAviator</code>
+
 <code>SaabGunners77Goner15</code>
+
 <code>RobustWards32Dirtied</code>
+
 <code>FellerHomesteaders11</code>
+
 <code>Kettledrums27Guzzler</code>
+
 <code>Graders5225Izhevsk64</code>
 
 (highly unlikely to be in dictionary attack and easy to remember)
