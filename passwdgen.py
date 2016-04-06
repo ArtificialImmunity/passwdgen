@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 from sys import argv
-from random import randrange
+from os import urandom
 
 #Default password length when no args are given
 DEFAULTPASSLEN=15
@@ -9,13 +9,13 @@ def usage():
 	'''
 	Prints the usage
 	'''
-	print "#Password Generator#"
-	print "Author: Jordan Bruce"
-	print ""
-	print "Usage: "
-	print "\t./passwdgen <desired password length>"
-	print ""
-	print "If no length is given, default password length is 15"
+	print ("#Password Generator#")
+	print ("Author: Jordan Bruce")
+	print ("")
+	print ("Usage: ")
+	print ("\t./passwdgen <desired password length>")
+	print ("")
+	print ("If no length is given, default password length is 15")
 	return
 
 def hasNumbers(inputString):
@@ -29,9 +29,10 @@ def randNumber():
 	Percentage chance to reutrn a 2 digit number
 	'''
 	percentChanceOfNumber=35
-	rc=randrange(1,100,1)
-	if rc <=percentChanceOfNumber:
-		rr=randrange(10,99,1)
+	rc=int((ord(urandom(1))/255.0)*100)
+
+	if rc <= percentChanceOfNumber:
+		rr=int((ord(urandom(1))/255.0)*100)
 		return str(rr)
 	else:
 		return ""
@@ -46,7 +47,7 @@ def genPass(length):
 		passwd=""
 		while (len(passwd) != int(length)):
 			passwd=passwd+randNumber()
-			r=randrange(0,(len(words)-1),1)
+			r=int(round((ord(urandom(1))/255.0)*(len(words)-1)))
 			passwd=passwd+words[r].title()
 			passwd=passwd+randNumber()
 			if len(passwd)>length:
@@ -58,7 +59,7 @@ def genPass(length):
 def main():
 	args=len(argv)
 	if args == 1:
-		print genPass(DEFAULTPASSLEN)
+		print (genPass(DEFAULTPASSLEN))
 	elif args == 2:
 		try:
 			#Print help if user types the following
@@ -66,14 +67,14 @@ def main():
 				usage()
 			#Makes sure arg passed is a positive integer
 			elif isinstance(int(argv[1]),int) and int(argv[1]) >= 0:
-				print genPass(int(argv[1]))
+				print (genPass(int(argv[1])))
 			else:
 				#Print error msgs if any of the checks fail
-				print "Only use positive integers for password length, Exiting"
+				print ("Only use positive integers for password length, Exiting")
 		except:
-			print "Only use positive integers for password length, Exiting"
+			print ("Only use positive integers for password length, Exiting")
 	else:
-		print "Too many args, Exiting"
+		print ("Too many args, Exiting")
 
 if __name__ == '__main__':
 	main()
