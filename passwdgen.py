@@ -9,9 +9,7 @@ def usage():
 	'''
 	Prints the usage
 	'''
-	print "#################################"
-	print "#Password Generator Usage Manual#"
-	print "#################################\n"
+	print "#Password Generator#"
 	print "Author: Jordan Bruce"
 	print ""
 	print "Usage: "
