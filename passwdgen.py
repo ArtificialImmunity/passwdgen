@@ -33,6 +33,8 @@ def randNumber():
 
 	if rc <= percentChanceOfNumber:
 		rr=int((ord(urandom(1))/255.0)*100)
+		while rr < 10 or rr >= 100:
+			rr=int((ord(urandom(1))/255.0)*100)
 		return str(rr)
 	else:
 		return ""
