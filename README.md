@@ -1,7 +1,7 @@
 # passwdgen
 Generates a statistically strong password with a minimum char length of your choice.
 
-A strong password should be of decent length, e.g. 10-20+ characters long, containing alphanumeric characters both up and lower case with special characters. This script however, does not includ special characters.
+A strong password should be of decent length, e.g. 10-20+ characters long, containing alphanumeric characters both up and lower case with special characters. 
 
 A strong password should also not be a word or phrase that either has a personal attachment (name, pets name, home city) and it should also not follow a logical flow e.g. 'theSleepingDog' as it's more likely to be comprimised by a dictionary attack.
 
