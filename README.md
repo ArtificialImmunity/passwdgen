@@ -13,42 +13,45 @@ Usage
 
 Sample Outputs:
 
-<code>Hydroplanes27Spitted</code>
+<code>Reprised23Ambiences,</code>
 
-<code>UnawaresShaverRaft25</code>
+<code>Numismatic74Carve81#</code>
 
-<code>76ScarvesBrittSticks</code>
+<code>21CrimeaRhapsodic19~</code>
 
-<code>LandmassColoration58</code>
+<code>14Pithiest52Haloing£</code>
 
-<code>Stile66BlockSmothers</code>
+<code>16SalientsSlathered=</code>
 
-<code>HillierIncarnation20</code>
+<code>Mensa48Intoxicating#</code>
 
-<code>10Vaults58Ghosting93</code>
+<code>Pinches23Belts27Sam*</code>
 
-<code>60Joyriders37Lyric54</code>
+<code>Subspace78Vaughan38#</code>
 
-<code>OverhungTilted26Lief</code>
+<code>76MinimalBridgehead?</code>
 
-<code>83HawkingSunblocks83</code>
+<code>80Disneyland41Creak*</code>
 
-<code>82Brady48Middlebrows</code>
+<code>Investments51Tucker#</code>
 
-<code>Misjudging62Implicit</code>
+<code>Modulates63Bassinet$</code>
 
-<code>InfringedDemarcate30</code>
+<code>26BeholdsGooseberry)</code>
 
-<code>96UnfeelinglyAviator</code>
+<code>35Constable57Haze40)</code>
 
-<code>SaabGunners77Goner15</code>
+<code>Gluing45Laxatives90)</code>
 
-<code>RobustWards32Dirtied</code>
+<code>DirtinessTreading94=</code>
 
-<code>FellerHomesteaders11</code>
+<code>Blistered19Leaflets(</code>
 
-<code>Kettledrums27Guzzler</code>
+<code>JackpotPhilippine77+</code>
 
-<code>Graders5225Izhevsk64</code>
+<code>72RacemesToxicity23></code>
+
+<code>InsuranceDesirous24-</code>
+
 
 (highly unlikely to be in dictionary attack and easy to remember)
