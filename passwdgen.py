@@ -48,24 +48,35 @@ def genPass(length):
 		words=w.read().splitlines()
 		passwd=""
 		r=rand()
-		specials="! \" £ $ % ^ & * ( ) _ - + = ? / # ~ < > , ."
+		specials="! £ $ % ^ & * ( ) _ - + = ? / # ~ < > , ."
 		spec=""
 		length=int(length)
+		numWords=0
+		
+		#Deal with short / 0 length passwords
 		if length != 0:
 			length=length-1
 			specials=specials.split(" ")
 			rs=r.randint(0,(len(specials)-1))
 			spec=spec+specials[rs]
+
 		#Make random pass of length length
 		while (len(passwd) != length):
-			passwd=passwd+randNumber()
 			rr=r.randint(0,(len(words)-1))
-			passwd=passwd+words[rr].title()
+			word=words[rr].title()
+			passwd=passwd+randNumber()
+			passwd=passwd+word
+			numWords+=1
 			passwd=passwd+randNumber()
 			if len(passwd)>length:
 				passwd=""
-			if len(passwd) == length and not hasNumbers(passwd) and (length >= 3):
+				numWords=0
+			if len(passwd) == length and not hasNumbers(passwd) and (length > 3):
 				passwd=""
+				numWords=0
+			if len(passwd) == length and (length+1>=10) and numWords<2:
+				passwd=""
+				numWords=0
 		passwd=passwd+spec
 				
 	return passwd
