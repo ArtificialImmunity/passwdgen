@@ -24,14 +24,18 @@ def hasNumbers(inputString):
 	'''
 	return any(char.isdigit() for char in inputString)
 
+def rPercent():
+	r=rand()
+	rc=r.randint(0,100)
+	return rc
+
 def randNumber():
 	'''
 	Percentage chance to reutrn a 2 digit number
 	'''
-	percentChanceOfNumber=35
 	r=rand()
-	rc=r.randint(0,100)
-
+	percentChanceOfNumber=25
+	rc=rPercent()
 	if rc <= percentChanceOfNumber:
 		rr=r.randint(10,99)
 		return str(rr)
@@ -66,8 +70,10 @@ def genPass(length):
 			word=words[rr].title()
 			passwd=passwd+randNumber()
 			passwd=passwd+word
-			numWords+=1
 			passwd=passwd+randNumber()
+			numWords+=1
+
+			#Setting conditions for password strength
 			if len(passwd)>length:
 				passwd=""
 				numWords=0
@@ -77,9 +83,44 @@ def genPass(length):
 			if len(passwd) == length and (length+1>=10) and numWords<2:
 				passwd=""
 				numWords=0
-		passwd=passwd+spec
+		if rPercent() >= 50:
+			passwd=passwd+spec
+		else: passwd=spec+passwd
 				
-	return passwd
+	return leetSpeak(passwd)
+
+def leetSpeak(passwd):
+
+	leet={ "a" : "@",
+		"A" : "4",
+		"c" : "<",
+		"C" : "(",
+		"e" : "3",
+		"E" : "£",
+		"g" : "9",
+		"G" : "9",
+		"i" : "!",
+		"I" : "1",
+		"o" : "0",
+		"O" : "0",
+		"s" : "5",
+		"S" : "$",
+		"t" : "7",
+		"T" : "7" }
+
+	passwdl=[]
+
+	for letter in passwd:
+		try:
+			if leet[letter]:
+				percentChanceOfNumber=25
+				if rPercent() <= percentChanceOfNumber:
+					passwdl.append(leet[letter])
+				else: passwdl.append(letter)
+		except:
+			passwdl.append(letter)
+	
+	return ''.join(passwdl)
 
 def main():
 	args=len(argv)
